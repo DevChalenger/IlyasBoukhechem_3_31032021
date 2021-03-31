@@ -1,0 +1,94 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+.RestaurantSection {
+  width: 90%;
+  padding: 5%;
+}
+.NouveauRestaurant {
+  background-color: rgb(153, 226, 208);
+  padding: 5px 10px 5px 10px;
+  color: rgb(0, 135, 102);
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.NouveauRestaurant p {
+  margin: 0;
+}
+.FastFoodBlock {
+  box-shadow: 0px 0px 10px -4px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+}
+.ImgFastFood1 {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  order: 2;
+}
+.FastFoodImg {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.FastFoodHome {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.ImgFastFood2 {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.ImgFastFood3 {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.ImgFastFood4 {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+.FlexInformation {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Information {
+  display: flex;
+  flex-direction: column;
+}
+.Information span {
+  font-weight: lighter;
+}
+.fa-heart {
+  font-size: 1em;
+  display: none;
+}
+.First {
+  order: 2;
+  z-index: 2;
+}
+.First:hover {
+  z-index: 0;
+}
+.Menu {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Position {
+  content: none;
+  width: 0;
+  order: 1;
+  color: white;
+}
+.Position:hover {
+  color: red;
+  z-index: 3;
+}
+.Information p {
+  margin: 0;
+  font-weight: bold;
+}

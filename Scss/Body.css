@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Shrikhand;
+  font-weight: 800;
+  src: url("../polices/Shrikhand-Regular.otf") format("OpenType");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../polices/Roboto-Regular.ttf") format("TrueType");
+}
+body {
+  margin: 0;
+  width: 100%;
+  font-family: Roboto;
+}
+main {
+  z-index: 1;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 8;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  display: flex;
+  flex-direction: column;
+  color: #9356dc;
+}
+.RotateLoader {
+  background-image: linear-gradient(#9356dc, #ff79da, #99e2d0);
+  animation: RotateLoader 6s;
+  padding: 0.5em;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.loaderImg {
+  height: 3em;
+  width: 3em;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  transform: rotate(360deg);
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes RotateLoader {
+  100% {
+    transform: rotate(1080deg);
+  }
+}

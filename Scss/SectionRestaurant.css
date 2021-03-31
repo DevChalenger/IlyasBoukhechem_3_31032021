@@ -1,0 +1,120 @@
+.MenuRestaurant {
+  margin-top: -2rem;
+  order: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  background-color: rgb(246, 246, 246);
+}
+.MenuRestaurant h2 {
+  font-family: Shrikhand;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ArticleRestaurant h3 {
+  display: inline-block;
+  position: relative;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+.ArticleRestaurant h3::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 4px solid #99e2d0;
+}
+.MenuFood {
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0px 0px 10px -3px;
+  border-radius: 0.75em;
+  background-color: white;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  animation-name: ApparitionTiming1;
+  animation-fill-mode: both;
+  animation-duration: 1.5s;
+}
+
+@keyframes ApparitionTiming1 {
+  from {
+    opacity: 0;
+    margin-top: 1em;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+.one {
+  animation-delay: 0s;
+}
+.two {
+  animation-delay: 0.5s;
+}
+.three {
+  animation-delay: 1s;
+}
+.MenuFood p {
+  margin: 0;
+}
+.Plats {
+  display: inline-block;
+  margin: 0;
+}
+.Price {
+  display: flex;
+  font-size: 0.9em;
+  align-items: flex-end;
+  padding: 10px 25px;
+}
+.ButtonOrder {
+  width: 150px;
+  margin: 40px auto;
+}
+.InformationMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.InformationMenu p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+.MenuFood:hover .check {
+  margin-right: 0px;
+  transition: 750ms;
+  margin-left: 0;
+}
+.Hover:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition: 800ms;
+}
+.check {
+  margin-right: -3.8rem;
+  padding: 20px;
+  font-size: 1.2em;
+  display: flex;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: white;
+  transition: all 0.8s;
+}

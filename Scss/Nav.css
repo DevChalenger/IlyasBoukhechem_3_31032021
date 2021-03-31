@@ -1,0 +1,45 @@
+nav{
+    width: 90%;
+    padding-top: 30px;
+    counter-reset: number;
+    font-weight: 900;
+}
+nav ol{
+    list-style-type: none;
+    padding: 0;
+}
+nav li{
+    display: flex;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px -0px 10px -4px;
+    padding: 10px;
+    padding-left: 0px;
+}
+nav i{
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 20px;
+    font-size: 1.1em;
+    color: gray;
+}
+.ColorIcone{
+    color: #9356DC;
+}
+nav li:before{
+    counter-increment: number;
+    content: " " counter(number) "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+    color: white;
+    border:none;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    right: 10px;
+    border-radius: 100%;
+}

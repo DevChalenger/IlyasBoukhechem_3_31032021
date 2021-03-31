@@ -1,0 +1,23 @@
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 10px;
+}
+ul {
+  width: 90%;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 5px;
+  width: auto;
+}
+footer i {
+  margin-right: 10px;
+  font-size: 0.8em;
+  width: 20px;
+}
+.OhMyFood {
+  font-family: Shrikhand;
+}
